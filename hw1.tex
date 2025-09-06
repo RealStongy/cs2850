@@ -1,0 +1,67 @@
+\documentclass[14pt, letterpaper, oneside]{extarticle}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath, amssymb}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+% chktex-file 44
+
+\begin{titlepage}
+    \vspace*{\fill} %
+    \centering
+    {\Huge \textbf{HW 1} \par}
+    {\vspace{2cm}}
+    {\LARGE By Tony Song (ls2272) \par}
+    {\vspace{2cm}}
+    {\LARGE September 5th, 2025 \par}
+    \vspace*{\fill}
+\end{titlepage}
+
+\newpage
+\textbf{(1)}
+
+(a) The maximum number of links between four hosts is 6 ($1 + 2 + 3 = 6$).
+Thus, such a network is not possible.
+
+(b) Total degrees $= 2 + 1 + 1 + 1 = 5$
+
+Edges $= \frac{\text{Total degrees}}{2} = \frac{5}{2} = 2.5$
+
+The number of edges must be a whole number. Thus, such a network is not possible.
+
+\textbf{(2)}
+
+(a) Node D has degree 4. Node J has degree 6.
+Every other node (A, B, C, E, F, G, H, I) has degree 1.
+
+(b) The graph would have 4 connected components if node D was removed.
+The graph would have 6 connected components if node J was removed.
+The graph would still have 1 connected component if any other node (A, B, C, E, F, G, H, I) was removed.
+
+(c) Nodes D and J have the property that the maximum distance from this bank to any other bank is at most 2.
+They have this property because they are centrally located in this graph.
+
+(d) No, this is not always true. A centrally located node is one that has the shortest total distance from other nodes.
+Having the highest degree is having the most immediate neighbours. A node with the highest degree can be at the end of the network,
+where it would have longer distances with other nodes, making it not centrally located.
+
+% insert drawn graph
+
+\textbf{(3)}
+
+(a) % insert drawn graph
+
+(b) Yes % insert drawn graph
+
+(c) Yes % insert drawn graph
+
+\textbf{(4)}
+
+\end{document}
